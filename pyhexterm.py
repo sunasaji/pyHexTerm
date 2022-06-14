@@ -21,7 +21,7 @@ serial_args_list=args.serial_args.split(",")
 port = serial.Serial(*serial_args_list,parity=serial.PARITY_NONE)
 cn=int(args.chunk_num)
 
-print("Enter HEX strings and press Enter to send. Spaces are ignored. Press Ctrl-C or Ctrl-D and Enter to exit.\n"+args.in_prompt,end="")
+print("Enter HEX strings and press Enter to send. Spaces are ignored. Press Ctrl-C to exit.\n"+args.in_prompt,end="")
 string=""
 while True:
     try:
