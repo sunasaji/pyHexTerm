@@ -11,10 +11,10 @@ Example communication to CH9350L chip through USB-UART converter connected to CO
 
 # Usage
 pyhexterm &lt;portname&gt;,&lt;baudrate&gt; [-ip <input_prompt>] [-op <output_prompt>] [-cn <chunk_num>]  
-example: ```py pyhexterm COM1,115200```
+example: ```py pyhexterm.py COM1,115200```
 
 If you need to use other pyserial options (parity,timeout,xonxoff,etc), please add these options to serial.Serial() in this script.  
-On Cygwin or MSYS terminal, use winpty like this: ```winpty py pyhexterm.py```
+On Cygwin or MSYS terminal, use winpty like this: ```winpty py pyhexterm.py COM1,115200```
 
 # License
 These codes are licensed under BSD-3-Clause.
